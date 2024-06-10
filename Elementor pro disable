@@ -1,0 +1,22 @@
+Elementor File:-
+
+//// elementor pro disable
+function disable_plugin_updates( $value ) {
+  if ( isset($value) && is_object($value) ) {
+    if ( isset( $value->response['elementor/elementor.php'] ) ) {
+      unset( $value->response['elementor/elementor.php'] );
+    }
+    if ( isset( $value->response['elementor-pro/elementor-pro.php'] ) ) {
+      unset( $value->response['elementor-pro/elementor-pro.php'] );
+    }
+  }
+  return $value;
+}
+add_filter( 'site_transient_update_plugins', 'disable_plugin_updates' );
+/// Woo commerce product h1 change to h2
+//* Change Woo Product H1 Tag to H3
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
+add_action( 'woocommerce_single_product_summary', 'sgl_template_single_title', 5 );
+function sgl_template_single_title() {
+    the_title( '<h3 class="product_title entry-title">', '</h3>' );
+} (
