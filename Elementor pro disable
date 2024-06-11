@@ -1,4 +1,4 @@
-Elementor File:-
+
 
 //// elementor pro disable
 function disable_plugin_updates( $value ) {
