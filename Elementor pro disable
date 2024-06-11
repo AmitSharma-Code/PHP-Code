@@ -19,4 +19,4 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 add_action( 'woocommerce_single_product_summary', 'sgl_template_single_title', 5 );
 function sgl_template_single_title() {
     the_title( '<h3 class="product_title entry-title">', '</h3>' );
-} (
+} 
