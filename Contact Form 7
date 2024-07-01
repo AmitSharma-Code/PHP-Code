@@ -4,6 +4,70 @@
     text-align: center !important;
    	margin-top: 0px !important;
 }
+.custom-contact {
+    width: 100%;
+    display: inline-block;
+}
+.haff-con {
+    width: 50%;
+    float: left;
+    padding: 0px 15px !important;
+}
+.first-con {
+    width: 100%;
+    float: left;
+    padding: 0px 15px !important;
+}
+.haff-con p {
+    color: #000000;
+    font-family: "Poppins", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px !important;
+}
+label {
+    font-size: 20px;
+    color: #000000;
+    font-family: "Poppins", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px !important;
+    width: 100%;
+}
 
+
+
+
+
+
+
+
+
+
+<div class="custom-contact">
+
+<div class="haff-con">
+<label> Your Name
+   [text* Name] </label>
+</div>
+
+<div class="haff-con">
+<label> Your Email
+    [email* Email] </label>
+</div>
+
+<div class="first-con">
+<label> Phone (required)
+[tel* PhoneNumber] </label>
+</div>
+
+<div class="first-con">
+<label>Message
+ [textarea your-message] </label>
+</div>
+
+<div class="first-con">
+[submit "Submit"]
+</div>
 
 
