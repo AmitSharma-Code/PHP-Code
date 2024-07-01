@@ -34,7 +34,14 @@ label {
     line-height: 30px !important;
     width: 100%;
 }
-
+input.wpcf7-form-control.wpcf7-submit.has-spinner {
+    background-color: #CF4E00AD;
+    color: #fff;
+    border: none;
+    width: 100%;
+      font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+}
 
 
 
