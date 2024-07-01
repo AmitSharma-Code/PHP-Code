@@ -1,0 +1,9 @@
+.wpcf7-response-output {
+    border-color: #6FABB0 !important;
+    font-size: 17px !important;
+    text-align: center !important;
+   	margin-top: 0px !important;
+}
+
+
+
