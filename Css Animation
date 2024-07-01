@@ -1,0 +1,6 @@
+.mobilehov:hover {
+    transform: translateY(-10px);
+}
+.mobilehov {
+    transition: transform .5s;
+}
