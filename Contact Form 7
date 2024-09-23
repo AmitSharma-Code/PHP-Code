@@ -4,9 +4,12 @@
     text-align: center !important;
    	margin-top: 0px !important;
 }
+
 .custom-contact {
     width: 100%;
     display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 30px 20px 10px 20px;
 }
 .haff-con {
     width: 50%;
