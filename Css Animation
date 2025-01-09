@@ -60,3 +60,50 @@ ul.WhatsApp_icon {
     letter-spacing: 0.3px;
 }
 
+
+
+
+
+-----------**********----------------
+-----------**********----------------
+-----------**********----------------
+-----------**********----------------
+
+1- Header menu vertical Scroll-Bar
+
+#menu-item-1519 ul.elementskit-dropdown.elementskit-submenu-panel {
+    overflow-y: scroll;
+    height: 230px;
+  	scrollbar-width: thin;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
