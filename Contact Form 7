@@ -81,3 +81,26 @@ input.wpcf7-form-control.wpcf7-submit.has-spinner {
 </div>
 
 
+
+
+/////////////////////////////////////////////////////////
+
+
+<label>If you have an inspiration picture, please attach it below</label>
+[file file-687 filetypes:audio/*|video/*|image/* limit:10000mb]
+<label>PLEASE NOTE THAT HELIUM ORDER REQUIRE 48 HOURS NOTICE.</label>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
