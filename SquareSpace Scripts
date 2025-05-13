@@ -1,0 +1,16 @@
+
+
+To redirect from https://www.murmali.com/materials to https://murmali-1.myshopify.com/pages/about using jQuery, you can use this simple code block:
+
+<!-- jQuery (required if not already loaded) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    // Check if you're on the /materials page
+    if (window.location.pathname === "/materials") {
+      // Redirect to the Shopify page
+      window.location.href = "https://murmali-1.myshopify.com/pages/about";
+    }
+  });
+</script>
