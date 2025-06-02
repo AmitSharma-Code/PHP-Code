@@ -1,0 +1,146 @@
+
+
+When the font family does not display properly on the website, follow these steps:
+
+1- Advanced Settings:-
+
+Google Fonts – Enable
+Google Fonts Load – Set to Swap
+Load Font Awesome 4 Support – No
+
+2- Features (Make sure all are Active):-
+
+Inline Font Icons – Should be Inactive
+Load Google Font Locally – Should be Inactive
+
+
+-----------**********----------------
+
+
+// Disable Elementor and Elementor Pro Updates
+function disable_elementor_updates( $value ) {
+    if ( isset($value) && is_object($value) ) {
+        // Disable Elementor update
+        if ( isset( $value->response['elementor/elementor.php'] ) ) {
+            unset( $value->response['elementor/elementor.php'] );
+        }
+        // Disable Elementor Pro update
+        if ( isset( $value->response['elementor-pro/elementor-pro.php'] ) ) {
+            unset( $value->response['elementor-pro/elementor-pro.php'] );
+        }
+    }
+    return $value;
+}
+add_filter( 'site_transient_update_plugins', 'disable_elementor_updates' );
+ 
+// Disable Elementor Kit and Widgets
+add_action( 'wp', 'disable_elementor_kits' );
+ 
+function disable_elementor_kits() {
+    // Disable Elementor widgets and templates
+    if ( class_exists( 'Elementor\Plugin' ) ) {
+        remove_action( 'elementor/widgets/widgets_registered', [ 'Elementor\Plugin', 'add_widget' ] );
+        // Optionally remove Elementor front-end styles and scripts
+        wp_dequeue_style( 'elementor-frontend' );
+        wp_dequeue_script( 'elementor-frontend' );
+    }
+}
+
+
+-----------**********----------------
+
+
+
+                   Useful Use the website link::--
+
+
+Topic: PI7 Image Tool - Compress & Edit Pictures
+https://image.pi7.org/
+-----------**********----------------
+Topic:: Clearn images or logos site:- 
+https://cleanup.pictures/
+-----------**********----------------
+Topic:: Wording Counting site:- 
+https://convertcase.net/
+-----------**********----------------
+https://getcssscan.com/css-box-shadow-examples
+-----------**********----------------
+https://www.lipsum.com/
+-----------**********----------------
+https://elements.envato.com/web-templates/wordpress+theme        ///     
+-----------**********----------------
+https://preview.themeforest.net/item/lotus-flexible-multipurpose-responsive-wp-theme/full_screen_preview/
+3909293?_ga=2.233414494.1519046832.1686630208-288404416.1678680164&_gac=1.61008222.1684728765.CjwKCAjwgqejBhBAEiwAuWHioPM8f66sY5ilOl8JJKQk2GNJXcfbjOIreeYTSE02ANQOb6K2aQ0mPBoCuhwQAvD_BwE
+
+
+-----------**********----------------
+
+
+                 Wordpress Plugins:--
+
+1-  Elementor
+2-  Essential Addons for Elementor
+3-  MC4WP: Mailchimp for WordPress
+4-  Smart Slider 3
+5-  The Events Calender
+6-  WPCode Lite
+7-  WPB Popup for Contact Form  (Pop Form)
+8-  Responsive Accordion And Collapse  (FAQ Plugin)
+9-  Sliders - Meta Slider
+10- reSmuch.it image Optimizer
+11- Elementaskit Lite – Not Use
+12- Post sliders –Post Slider and Post Carousel
+13- Testimonial Slider and showcase
+14- Sticky Header Effects for Elementor
+15- Click to Chat
+16- Widgets for Google Reviews
+
+               WooCommerce Usefull plugins:-- 
+
+Popup Builder
+Admin and site enhancements (ASE)
+Advanced WooCommerce Product Gallery Slider
+Custom Product Tabs for WooCommerce
+Variation Swatches for WooCommerce
+Advanced Woocommerce Product Gallery Slider
+
+
+                Google Crome Extensions:-- 
+
+1-  AdGuard AdBlocker
+2-  ColorPick Eyedropper
+3-  GoFullPage - Full Page Screen Capture
+4-  Hoxx VPN Proxy
+5-  Lightshot (screenshot tool)
+6-  Mobile simulator - responsive testing tool
+7-  Notepad
+8-  Window Resizer
+9-  Wappalyzer - Technology profiler
+10- Font Finder [Traingler box blue color]
+11- AdGuard AdBlocker
+12- BuiltWith Technology Profiler
+13- Buster: Captcha Solver for Humans
+14- ColorPick Eyedropper
+15- Dimensions
+16- Font Finder
+17- Grammarly: Grammar Checker and AI
+18- Grid Ruler
+19- Smart Page Ruler
+20- Wappalyzer 
+21- Zoho Vault
+22- WhatFont
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
