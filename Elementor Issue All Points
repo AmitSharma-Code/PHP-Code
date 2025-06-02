@@ -49,6 +49,25 @@ function disable_elementor_kits() {
 
 -----------**********----------------
 
+woocommerce disable updated:-
+
+
+add_filter( 'auto_update_plugin', '__return_false' );
+
+-----------**********----------------
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                    Useful Use the website link::--
