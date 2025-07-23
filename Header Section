@@ -1,9 +1,0 @@
-Header Section :--
-
-
----Submenu scrolling css
-.areas .sub-menu  {
-    overflow-y: scroll !important;
-    height: 256px !important;
-    scrollbar-width: thin !important;
-}
