@@ -1,3 +1,22 @@
+
+Contact Form 7 WordPress plugin mein use kar raha hoon. 
+Mujhe ek jQuery script chahiye jo phone number field mein sirf digits hi allow kare, alphabetic characters work na karein. Koi aisi script send kar do
+
+
+
+<script>
+  jQuery(document).ready(function($) {
+    $('input[type="tel"]').on('input', function() {
+      this.value = this.value.replace(/[^0-9]/g, '');
+    });
+  });
+</script>
+
+
+
+
+
+
 .wpcf7-response-output {
     border-color: #6FABB0 !important;
     font-size: 17px !important;
