@@ -33,6 +33,43 @@ Image hover te zoom in and zoom out box image
 
 
 
+.our-ser {
+position: relative;
+border-radius: 20px;
+padding: 5px;
+background: #fff; /* Inner background */
+z-index: 1;
+margin-right: 20px;
+
+}
+ 
+.our-ser::before {
+content: '';
+position: absolute;
+inset: 0;
+padding: 2px; /* Border thickness */
+border-radius: 20px;
+background: linear-gradient(to bottom, #75c043, #169b48);
+-webkit-mask: linear-gradient(#fff 0 0) content-box, 
+linear-gradient(#fff 0 0);
+-webkit-mask-composite: destination-out;
+ mask-composite: exclude;
+z-index: -1;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
