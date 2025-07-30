@@ -14,22 +14,22 @@ Image hover te zoom in and zoom out box image
 
 .mob img {
     width: 100% !important;
-    height: 100% !important;
+    height: 318px !important;
     object-fit: cover !important;
     transition: transform 400ms;
-    height: 318px !important;
+    border-radius: 20px; /* Added this line */
 }
 
-.mob{
-width:30rem;
-height:20rem;
-overflow:hidden;
+.mob {
+    width: 30rem;
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 20px; /* Optional: add radius to container as well */
 }
 
-.mob:hover img{
-transform:scale(1.2);
+.mob:hover img {
+    transform: scale(1.2);
 }
-
 
 
 
