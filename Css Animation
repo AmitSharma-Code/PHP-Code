@@ -1,4 +1,52 @@
 
+--=======================Header Section Sticky : ============================
+
+<script>
+    jQuery(document).ready(function(){
+	jQuery(window).scroll(function() {
+if (jQuery(this).scrollTop() > 1){
+    jQuery('.cus-head').addClass("sticky");
+  }
+  else{
+    jQuery('.cus-head').removeClass("sticky");
+  }
+});
+		});
+		</script>
+
+-----------**********----------------
+
+css:-
+
+.cus-head.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7); /* White with transparency */
+  backdrop-filter: blur(10px); /* Applies blur to background behind header */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
+  z-index: 1000; /* Keeps it on top */
+}
+
+
+-----------**********----------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 --=======================Header Section : ============================
 
@@ -9,6 +57,7 @@
     scrollbar-width: thin !important;
 }
 
+-----------**********----------------
 
 Image hover te zoom in and zoom out box image
 
@@ -31,7 +80,7 @@ Image hover te zoom in and zoom out box image
     transform: scale(1.2);
 }
 
-
+-----------**********----------------
 
 .our-ser {
 position: relative;
